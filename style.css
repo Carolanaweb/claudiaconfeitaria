@@ -1,0 +1,129 @@
+* {
+    margin: 0; /* muda a margem */
+    padding: 0; /* espaço na margem */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* muda a fonte do site */
+    line-height: 1.6; /* espaço entre as linhas */
+    background-color: #244475; /* muda a cor do fundo do site */
+}
+
+nav {
+    position: fixed; /* fixa o nav no topo da tela */
+    top: 0; /* ? */
+    width: 100%; /* deixa a largura do nav em toda a tela */
+    background-color: #ae52a78c; /* muda a cor do nav (topo da pagina) */
+    padding: 20px 0; /* deixa um espaço maior entre as opções do nav  */
+}
+
+nav ul {
+    list-style-type: none; /* ? */
+    display: flex; /* deixa as opções do navegador uma do lado da outra  */
+    justify-content: center; /* deixa as opções do navegador no centro da tela */
+}
+
+nav ul li {
+    margin: 0 20px; /* deixa uma margem em branco entre as opções do navegador */
+}
+
+nav ul li a {
+    color: white; /* muda a cor do texto */
+    text-decoration: none; /* tira todas as decorações automaticas */
+    font-size: 18px; /* muda o tamanho da fonte do navegador */
+    padding: 10px; /* afasta as opções do navegador uma da outra  */
+    transition: color 0.3s; /* faz uma pequena alteração de cor nas opções do navegador ao entrar na pagina  */
+}
+
+nav ul li a:hover {
+    color: #692a8d; /* muda a cor das opções do navegador ao passar o mouse por cima */
+}
+
+section:not(#home) {
+    padding: 100px 20px; /* da espaços entre cada categoria do site */
+    text-align: center; /* deixa o texto e as imagens no centro da tela  */
+    display:  flex; /* ? */
+    justify-content: center; /* ? */
+    align-items: center; /* ? */
+    height: 100vh;  /* deixa as imagens mais distantes */
+}
+
+#home {
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/19/17/49/cake-balls-4139989_640.jpg);
+    /* coloca uma imagem no fundo do site  */
+    background-size: cover; /* faz com que a imagem de fundo cubra toda a tela */
+    background-repeat: no-repeat; /* faz a imagem nao se repetir */
+    color: rgb(133, 57, 101); 
+    /* muda a cor das letras do home */
+    height: 100vh;
+    /* faz com que a imagem cubra toda a tela inicial */
+    text-align: center; 
+    /* alinha o texto no centro da tela */
+    display: flex; 
+    /* ? */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    flex-direction : row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 400px;
+    height:  300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #9c67c0;
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: #2c1a40;
+}
+
+#services {
+    background-color: #ffffff;
+}
+#about {
+    background-color: #EAEAEA;
+
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+.cta-button {
+    margin-top: 30px;
+    background-color: #81cdd0;
+    color: rgb (0, 0, 0);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba (0,0, 0, 0.1);
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.cta-button:hover {
+    background-color: #914fd4; /* muda a cor das opções do navegador ao passar o mouse por cima */
+}
